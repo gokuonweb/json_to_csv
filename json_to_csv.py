@@ -96,6 +96,7 @@ if __name__ == "__main__":
                     end_result = convert_json_to_csv(output_path, json_data)
                     if end_result:
                         print(f"[+] CSV file saved at: {output_path}.")
+                        time.sleep(10)
                     else:
                         print(f"[-] Unable to convert JSON to CSV.")
                         time.sleep(10)
