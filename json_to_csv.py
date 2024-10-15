@@ -19,9 +19,10 @@ def check_json_file(file_path):
             data = json.load(file)
 
         if isinstance(data, dict):
-            data_objects = data["objects"]
+            # data_objects = data["objects"]
             print("[+] The file contains valid JSON.")
-            return data_objects
+            # return data_objects
+            return data
         else:
             print("[-] The JSON is valid but does not contain a top-level dictionary.")
             return 0
