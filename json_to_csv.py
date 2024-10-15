@@ -18,10 +18,8 @@ def check_json_file(file_path):
         with open(file_path, 'r', encoding='utf-8') as file:
             data = json.load(file)
 
-        if isinstance(data, dict):
-            # data_objects = data["objects"]
+        if isinstance(data, list) and isinstance(data[0], dict):
             print("[+] The file contains valid JSON.")
-            # return data_objects
             return data
         else:
             print("[-] The JSON is valid but does not contain a top-level dictionary.")
@@ -127,9 +125,3 @@ if __name__ == "__main__":
         print('\n[!] Keyboard interrupt detected. Exiting!')
         time.sleep(10)
         raise SystemExit()
-
-
-
-
-
-
