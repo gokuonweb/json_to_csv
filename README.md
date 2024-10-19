@@ -1,14 +1,18 @@
-This script is used for converting JSON data to CSV format.
-Sample JSON data provided in .json or .txt file
+This script converts JSON data to CSV format. It accepts sample JSON data provided in either a .json or .txt file.
+Sample JSON Data:
+
+json
 
 [
-        {"name": "ABC", "age": 30, "city": "Bangalore", "country": "India"},
-        {"name": "DEF", "age": 25, "country": "USA"},
-        {"name": "XYZ", "city": "London", "country": "UK", "profession": "Engineer"}
-    ]
-    
-Input accepted:
-    .TXT or .JSON files
-    
+    {"name": "ABC", "age": 30, "city": "Bangalore", "country": "India"},
+    {"name": "DEF", "age": 25, "country": "USA"},
+    {"name": "XYZ", "city": "London", "country": "UK", "profession": "Engineer"}
+]
+
+Input:
+
+    Accepted file formats: .txt or .json
+
 Output:
-    .CSV file
+
+    Generated output: .csv file
